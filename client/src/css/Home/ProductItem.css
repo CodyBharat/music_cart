@@ -1,0 +1,131 @@
+.productitem {
+  position: relative;
+  display: flex;
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  margin: auto;
+  background-color: #0066ff2b;
+  overflow: hidden;
+}
+
+.productitem img {
+  cursor: pointer;
+  width: 90%;
+  height: 90%;
+  margin: auto;
+  background-color: white;
+}
+
+.productdetails {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  height: max-content;
+  width: 200px;
+}
+
+.productdetails > * {
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.productdetails .name {
+  font-size: 17px;
+}
+
+.productitem .carticon {
+  position: absolute;
+  z-index: 1;
+  margin: auto;
+  color: #1D7000;
+}
+
+.productitem .carticoncontainer {
+  cursor: pointer;
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  border-radius: 100%;
+  padding: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.listview{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 25px auto;
+}
+
+.listview .productdetails{
+  width: 76%;
+  margin: auto;
+}
+
+.listview .productdetails .name {
+  font-size: 21px;
+}
+
+.listview .productdetails > * {
+  margin-top: 10px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.detailsbutton{
+  background-color: #2E0052;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 12px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-weight: 600;
+  min-width: 100px;
+  width: 10%;
+}
+
+@media screen and (max-width: 768px) {
+
+  .productitem{
+    width: 86%;
+    height: 40%;
+  }
+
+  .productitem img{
+    width: 90%;
+    height: 90%;
+  }
+
+  .productdetails{
+    padding: 10px;
+    width: 150px;
+  }
+
+  .productdetails > * {
+    margin-top: 5px;
+    font-size: 11px;
+  }
+
+  .productdetails .name {
+    font-size: 14px;
+  }
+
+  .productitemcontainer{
+    height: 300px;
+    width: 150px;
+    border-radius: 5px;
+    border: 1px solid rgb(181, 181, 181);
+  }
+    
+}

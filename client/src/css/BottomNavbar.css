@@ -1,0 +1,67 @@
+/* .bottomnavbar {
+    position: none;
+} */
+
+/* make for phone */
+@media screen and (max-width: 768px) {
+    .bottomnavbar {
+        z-index: 999;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 60px;
+        background-color: white;
+        color: #2E0052;
+        display: flex !important;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-top: 5px;
+        z-index: 50;
+        overflow-x: hidden;
+        border-top: 1px solid #c8c8c8;
+    }
+
+    .bottomnavbar-item {
+        position: relative;
+        z-index: 999;
+        cursor: pointer;
+        margin: 0 15px;
+        text-decoration: none;
+        color: #2E0052;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .bottomnavbar-icon {
+        z-index: 999;
+        font-size: 30px;
+        margin-bottom: 0;
+    }
+
+    .bottomnavbar-text{
+        z-index: 999;
+        font-size: 12px;
+        margin-top: 0;
+    }
+
+    .bottomnavbar .active{
+        z-index: 999;
+        border-top: 4px solid #2E0052;
+        position: relative;
+        top: -4px;
+    }
+
+    .bottomnavbar-totalQuantity{
+        height: 15px;
+        width: 15px;
+        font-size: 10px;
+        border-radius: 50%;
+        position: absolute;
+        top:0px;
+        text-align: center;
+        right: 0px;
+        z-index: 10000;
+        background-color: red;
+        color: white;
+    }
+
+}

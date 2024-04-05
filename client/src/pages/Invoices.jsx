@@ -33,11 +33,10 @@ const Invoices = () => {
 
     getTheInvoices();
   }, []);
-  console.log(totalInvoices);
   return (
     <div>
       {isLoading ? (
-        <LoadingBar /> // Message while loading
+        <Spinner /> // Message while loading
       ) : (
         <>
           <div className="goback">

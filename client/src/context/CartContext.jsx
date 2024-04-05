@@ -198,7 +198,6 @@ const CartState = (props) => {
       });
       const data = await response.json();
       if (data.success) {
-        toastMessage(data.message, "success");
         setTotalInvoices(data.data);
         return true;
       } else {
@@ -226,7 +225,6 @@ const CartState = (props) => {
       });
       const data = await response.json();
       if (data.success) {
-        toastMessage(data.message, "success");
         singleInvoicesData.current = (data.data);
         return true;
       } else {
